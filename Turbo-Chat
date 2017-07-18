@@ -1,0 +1,148 @@
+.ember-chat .mentioned {
+	color: #FFF !important;
+	background-color: #6441a3 !important;
+}
+
+.ember-chat .mentioning {
+	color: inherit !important;
+	background-color: inherit !important;
+}
+
+.chat-messages .chat-line:hover {
+  background-color: #6441a3 !important;
+}
+
+.chat-line:hover .from.has-color {
+	color: #FFF !important;
+  background-color: transparent !important;
+}
+
+.chat-messages .chat-line:nth-child(2n):hover {
+  background-color: #6441a3 !important;
+}
+
+.chat-line:hover .timestamp {
+  color: transparent;
+}
+
+.ember-chat .more-messages-indicator, .visible.js-chat-more-messages {
+	display: none !important;
+}
+
+@keyframes newMessage {
+	0% {opacity: 0}                                         
+	100% {opacity: 1}
+}
+
+@keyframes highlight {
+  0% {color: inherit}
+  100% {color: #FFF}
+}
+
+@keyframes fadeHighlight {
+	from {background-color: inherit}
+	to {background-color: #6441a3}
+}
+
+@keyframes fadeHascolor {
+  from {color: inherit}
+  to {color: #FFF}
+}
+
+@keyframes fadeTimestamp {
+  from {color: inherit}
+  to {color: #6441a3}
+}
+
+.chat-lines li.chat-line:nth-last-child(1) {
+	animation-name: newMessage;
+	animation-duration: .87s;
+	animation-timing-function: ease-out;
+}
+
+.chat-messages .chat-line:hover {
+  background-color: #6441a3 !important;
+	animation-name: fadeHighlight;
+	animation-duration: .5s;
+	animation-timing-function: ease-in;
+}
+
+.chat-line:hover .from.has-color {
+  background-color: transparent !important;
+	animation-name: fadeHascolor;
+	animation-duration: .5s;
+	animation-timing-function: ease-in;
+}
+
+.chat-line:hover .timestamp  {
+	animation-name: fadeTimestamp;
+	animation-duration: .3s;
+	animation-timing-function: ease-out;
+}
+
+.theme--dark .social-column {
+	background-color: #2c2541 !important;
+}
+
+.theme--dark .sc-header {
+	box-shadow: 0 -0.1rem 0 #392e5c inset !important;
+}
+
+.theme--dark .sc-search {
+	background-color: #2c2541 !important;
+	border-top-color: #392e5c !important;
+}
+
+.theme--dark .sc-search .form__input[type="text"] {
+	box-shadow: #392e5c 0 0 0 1px inset;
+	background-color: #201c2b;
+}
+
+.chat-container .chat-header, .ember-chat-container .chat-header, .chat-container.dark .chat-header, .ember-chat-container.dark .chat-header {
+	box-shadow: none !important;
+  background-color: #17141f !important;
+	padding-top: 30px !important;
+	padding-bottom: 18px !important;
+}
+
+.button.glyph svg path, .button.button--icon-only svg path {
+  fill: #6441a3 !important;
+}
+
+#right_col, #right_col .content .top #right_nav, #right_col .content .top, #right_col .content .bottom #controls, .rightcol-content, #right_col .top #right_nav, #right_col .top, #right_col .bottom #controls, .ember-chat .chat-interface, .vod-chat__input {
+  background-color: #17141f !important;
+	padding-top: 6px !important;                                    
+}
+
+#chat_text_input, #chat_text_login, .ember-chat .chat-interface textarea, .vod-chat textarea {
+	background-color: #201c2b !important;
+	border: solid 0px #392e5c !important;
+}
+
+#chat_line_list .line, .chat-messages .chat-line {
+	background-color: #201c2b !important;
+	border-bottom: 0px !important;
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+	padding-right: 9px !important;
+	padding-left: 9px !important;
+	margin: 0px !important;
+	line-height: 20px !important;
+  box-shadow: 0px 0px !important;
+}
+
+#chat_line_list .line:nth-child(2n), .chat-messages .chat-line:nth-child(2n) {
+  background-color: #17141f !important;
+}
+
+.ember-chat .sticky-message--pinned-cheers {
+  display: none !important;                    
+}
+
+.ember-chat .chat-messages.bits-tags__offset, .chat-messages {
+  top: 0 !important;
+}
+
+[title^="cheer"], [original-title^="cheer"], .sticky-message--pinned-cheers, .bits-tag--container, a[href*="introducing-cheering"] {
+  display: none !important;
+}
